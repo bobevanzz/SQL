@@ -6,7 +6,7 @@ from customer c
 left join [order] o
 on [o].customerid = c.id
 --where clause with boolean expression--
-where o.Amount < 250 or o.Amount > 600
+--where o.Amount < 250 or o.Amount > 600
 order by  o.Amount desc
 
 
