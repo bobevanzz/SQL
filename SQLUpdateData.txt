@@ -1,0 +1,9 @@
+Update Student set
+FirstName='Gregory',
+LastName= 'Doud'
+where FirstName= 'Greg' and LastName = 'Duod'
+
+Insert Syntax - only works on data and not columns
+INSERT into <tablename>
+{(columnname1, columnname2, ...)}
+Values(value1, value2 ,...)

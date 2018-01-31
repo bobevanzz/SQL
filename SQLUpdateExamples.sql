@@ -29,4 +29,4 @@ Description = Description + '301'
   WHERE id in (7,8)
 
 select * from class
-	where Id in (select Id from class where 
+	where Id in (select Id from class where CHARINDEX('Economics', description) >0)
