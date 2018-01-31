@@ -15,3 +15,20 @@ values  ('Mike', 'Jones', 4,1200,1),
 		('Michael','Johnson',3.2,1500,4),
 		('Jennifer','Hudson',4.0,1457,3),
 		('Cong','Cong',3.8,1490,2)
+
+
+Insert into class (description) 
+values ('Blockchain Theory') 
+Insert into class (description) 
+Values('Whats up with that?') 
+Insert into class (description)
+Values('Advanced Complaining')
+select * from class
+
+select * from class
+--Add Greg to a new class with a C
+Insert into schedule (StudentId, ClassId, Grade)
+Values (5,16,'A+')
+select * from schedule
+
+select * from student
