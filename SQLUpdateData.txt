@@ -1,14 +1,23 @@
+Add Syntax
+
+-Update Syntax
 Update Student set
 FirstName='Gregory',
 LastName= 'Doud'
 where FirstName= 'Greg' and LastName = 'Duod'
 
-Insert Syntax - only works on data and not columns
+-Insert Syntax - only works on data and not columns
 INSERT into <tablename>
 {(columnname1, columnname2, ...)}
 Values(value1, value2 ,...)
 
-Delete Syntax - No going back
-Select * the records to make sure before you delete
+-Delete Syntax - No going back
+Select * the records to make sure before you delete, then replace Select with Delete
 DELETE from Table
 where <condition>
+
+Ways of deletion
+fk->pk
+1. restrict
+2. nullify
+3. cascade
