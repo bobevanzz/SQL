@@ -7,3 +7,8 @@ Insert Syntax - only works on data and not columns
 INSERT into <tablename>
 {(columnname1, columnname2, ...)}
 Values(value1, value2 ,...)
+
+Delete Syntax - No going back
+Select * the records to make sure before you delete
+DELETE from Table
+where <condition>
