@@ -1,7 +1,14 @@
---Another Created Table
+use master
+go
+drop database if exists Corporate
+go
+create database Corporate
+go
+use Corporate
 drop table if exists Employee
 drop table if exists Manager
 drop table if exists Department
+go
 create table Department(
 Id int primary key identity (1,1),
 Name nvarchar(80) not null,
