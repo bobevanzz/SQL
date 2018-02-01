@@ -44,8 +44,8 @@ Select CONCAT(e.FirstName, ' ',e.LastName) as 'Employee',
 		CONCAT(m.FirstName, ' ', m.LastName) as 'Manager',
 		d.Name as 'Department',
 		d.CostCenter
-	from employee e
-	join manager m
+	from Employee e
+	join Manager m
 		on m.id= e.ManagerId
 	join Department d
 	on d.Id=m.DepartmentId

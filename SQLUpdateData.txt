@@ -60,5 +60,11 @@ DateUpdated datetime
 Drop Syntax
 Drop Table <tablename>
 
+Alter
+alter table <tablename>
+add <columnname> <type> *always make it null*
+
+alter table <tablename>
+alter column <columnname> nvarchar(12) NOT NULL
 
 
