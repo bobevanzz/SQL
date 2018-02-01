@@ -55,6 +55,8 @@ DateCreated datetime not null default Now(),
 DateUpdated datetime
 )
 
+*** create tables without foreign keys before ones without ***
+
 
 
 
