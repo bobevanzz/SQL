@@ -21,3 +21,41 @@ fk->pk
 1. restrict
 2. nullify
 3. cascade
+
+-Create table syntax
+<tablename><columnname>primary key identity(seed, increment) * always use id as primary
+CREATE TABLE <tablename> (<columnname> <type> {not null} {default n} *use default only if needed, like for a credit score the default would be zero
+{check (<condition>)
+<fkTableName> <type> foreign key references <primarykeytable>(primarykeycolumnname)
+unique ' ',
+)
+
+Column Types (common)
+int- positive or negative integer
+{n}varchar(len) {DBCS|} Ascii string with max length of 'len'
+bit - represents a boolean; values of 0 (false) and 1 (true)
+datetime- a date including a time component
+decimal(digits,decimals) - represents decimal numbers; 'digits' represents all digits in numbers and 'decimals' represents number of decimal places
+
+columns- null or not null * if you cant decided wether to use, use not null because its easier to change it back
+delcares wether a column value can be null.
+default is column CAN be null
+if not null:
+	can never be set to null
+	must be provided a value on insert unless a default exists
+
+Create table Example
+CREATE TABLE Employee(
+Id int primary key identity (1,1),
+Name nvarchar(50) not null,
+YearsOfService int,
+DepartmentId int foreign key references Department(Id),
+Active bit not null default 1,
+DateCreated datetime not null default Now(),
+DateUpdated datetime
+)
+
+
+
+
+
