@@ -57,7 +57,8 @@ DateUpdated datetime
 
 *** create tables without foreign keys before ones without ***
 
-
+Drop Syntax
+Drop Table <tablename>
 
 
 
