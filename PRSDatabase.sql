@@ -122,6 +122,7 @@ DateNeeded date not null default (dateadd(day,(7),getdate())),
 DeliveryMode nvarchar(25),
 [Status] nvarchar(10) not null default 'NEW',  
 Total decimal not null default 0,
+Active bit not null default 1,
 UserId int not null foreign key references [User](Id)
 )
 go
