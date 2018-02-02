@@ -21,6 +21,8 @@ Create table [User] (
 	IsAdmin bit not null default 0, --same as above--
 	DateCreated datetime not null default getdate(), 
 	DateUpdated datetime,
+	Active bit not null default 1,
+
 )
 
 -- to support unique UserNames
@@ -126,6 +128,8 @@ Active bit not null default 1,
 UserId int not null foreign key references [User](Id)
 )
 go
+ 
+GO  
 
 Insert into PurchaseRequest 
 	(Description, Justification, DateNeeded,DeliveryMode,[Status],Total,UserId) values

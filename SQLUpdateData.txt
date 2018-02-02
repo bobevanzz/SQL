@@ -67,4 +67,7 @@ add <columnname> <type> *always make it null*
 alter table <tablename>
 alter column <columnname> nvarchar(12) NOT NULL
 
+ALTER TABLE PurchaseRequest 
+ADD CONSTRAINT FK_User_Id unique (UserId),
+    REFERENCES Person.Person (BusinessEntityID) ; 
 
