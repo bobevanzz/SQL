@@ -144,7 +144,7 @@ Insert into PurchaseRequest
 	('Public demo', 'For funding', ' ', 'FedEx', ' ', 1,'3')
 	
 go
-Create table PurchaseRequestLineItems (
+Create table PurchaseRequestLineItem (
 Id int not null primary key identity (1,1),
 PurchaseRequestId int not null foreign key references PurchaseRequest(Id),
 ProductId int not null foreign key references Product(Id),
@@ -152,10 +152,10 @@ Quantity int not null default 1
 )
 go
 
-Insert into PurchaseRequestLineItems
+Insert into PurchaseRequestLineItem
 (Quantity, PurchaseRequestId, ProductId) values (' ','1','1')
-Insert into PurchaseRequestLineItems
+Insert into PurchaseRequestLineItem
 (Quantity, PurchaseRequestId, ProductId) values (' ','2','2')
-Insert into PurchaseRequestLineItems
+Insert into PurchaseRequestLineItem
 (Quantity, PurchaseRequestId, ProductId) values (' ','3','3')
 go
